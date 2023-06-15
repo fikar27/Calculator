@@ -3,10 +3,41 @@
     <head>
         <style>
             button {
-                width:100%            
+                width:100%;
+                background-color: black;
+                color: white;
+                border: none;    
+                border-radius: 5px;
+                padding-top: 5px;    
+                padding-bottom: 5px;    
+            }
+
+            .red {
+                background-color: red;
+            }
+
+            .blue {
+                background-color: blue;
+            }
+
+            .opr {
+                background-color: green;
+            }
+
+            .grid-konten{
+                display: grid;
+                grid-template-columns: 50px 50px 50px 50px;
+                border-radius: 5px; 
+            }
+
+            input {
+                grid-column: 1 / span 4;
+            }
+
+            .red {
+                grid-column: 1 / span 2;
             }
         </style>
-        
     </head>
     <body>
         <table>
@@ -15,13 +46,13 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <button>AC</button>
+                    <button class="red">AC</button>
                 </td>
                 <td>
-                    <button>C</button>
+                    <button class="blue">C</button>
                 </td>
                 <td>
-                    <button>*</button>
+                    <button class="opr">*</button>
                 </td>
                 
             </tr>
@@ -36,7 +67,7 @@
                     <button>9</button>
                 </td>
                 <td>
-                    <button>/</button>
+                    <button class="opr">/</button>
                 </td>
                 
             </tr>
@@ -51,7 +82,7 @@
                     <button>6</button>
                 </td>
                 <td>
-                    <button>+</button>
+                    <button class="opr">+</button>
                 </td>
             </tr>
             <tr>
@@ -65,7 +96,7 @@
                     <button>3</button>
                 </td>
                 <td>
-                    <button>-</button>
+                    <button class="opr">-</button>
                 </td>
             </tr>
             <tr>
@@ -79,11 +110,35 @@
                     <button>.</button>
                 </td>
                 <td>
-                    <button>=</button>
+                    <button class="opr">=</button>
                 </td>
             </tr>
             <tr></tr>
         </table>
-    
+    <br>
+    <br>
+    <br>
+        <div class="grid-konten">
+            <input type="text" name="display">
+            <button class="red">AC</button>
+            <button class="blue">C</button>
+            <button class="opr">*</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="opr">/</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="opr">+</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="opr">-</button>
+            <button>+-</button>
+            <button>0</button>
+            <button>.</button>
+            <button class="opr">=</button>
+        </div>
     </body>
 </html>
