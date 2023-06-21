@@ -1,0 +1,17 @@
+.container {
+    background-color: blanchedalmond;
+}
+
+.btn {
+    padding: 5px;
+    min-width: 30px;
+}
+
+.btn-ac {
+    min-width: 60px;
+    padding: 5px;
+}
+
+.input {
+    padding: 5px;
+}

@@ -2,44 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<div class="container">
-        <div class="container-row">
-            <input name="display" class="input" type="number">
-        </div>
-        <div class="container-row">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-        </div>
-        <div class="container-row">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-        </div>
-        <div class="container-row">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-        </div>
-        <div class="container-row">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-        </div>
-        <div class="container-row">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-        </div>
-    </div>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index2.css">
+    <script src="index2.js"></script>
 </head>
 <body>
-    
+    <div>
+        <h1>KALKULATOR</h1>
+    </div>
+
+    <div class="container">
+        <div class="container-row">
+            <input id="display" class="input" type="number">
+        </div>
+        <div class="container-row">
+            <button class="btn-ac" onclick="kliktombol(this.innerText)">AC</button>
+            <button class="btn" onclick="kliktombol(this.innerText)">C</button>
+            <button class="btn" onclick="kliktombol(this.innerText)">x</button>
+        </div>
+        <div class="container-row">
+            <button class="btn" value="7" onclick="kliktombol(7)">7</button>
+            <button class="btn" value="8" onclick="kliktombol(8)">8</button>
+            <button class="btn" value="9" onclick="kliktombol(9)">9</button>
+            <button class="btn" value="/" onclick="kliktombol(this.innerText)">/</button>
+        </div>
+        <div class="container-row">
+            <button class="btn" value="4" onclick="kliktombol(4)">4</button>
+            <button class="btn" value="5" onclick="kliktombol(5)">5</button>
+            <button class="btn" value="6" onclick="kliktombol(6)">6</button>
+            <button class="btn" value="+" onclick="kliktombol(this.innerText)">+</button>
+        </div>
+        <div class="container-row">
+            <button class="btn" value="1" onclick="kliktombol(1)">1</button>
+            <button class="btn" value="2" onclick="kliktombol(2)">2</button>
+            <button class="btn" value="3" onclick="kliktombol(3)">3</button>
+            <button class="btn" value="-" onclick="kliktombol(this.innerText)">-</button>
+        </div>
+        <div class="container-row">
+            <button class="btn" onclick="kliktombol(this.innerText)">+-</button>
+            <button class="btn" onclick="kliktombol(this.innerText)">0</button>
+            <button class="btn" onclick="kliktombol(this.innerText)">.</button>
+            <button class="btn" onclick="kliktombol(this.innerText)">=</button>
+        </div>
+    </div>
 </body>
 </html>
