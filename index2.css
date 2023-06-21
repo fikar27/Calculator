@@ -1,5 +1,7 @@
 .container {
     background-color: blanchedalmond;
+    padding: 30px;
+    margin: auto;
 }
 
 .btn {

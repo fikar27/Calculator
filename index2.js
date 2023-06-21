@@ -1,4 +1,11 @@
+var displayAngka = ""
+
 function kliktombol(e) {
+    if (e == "AC") {
+        displayAngka = ""
+    } else {
     console.log(e)
-    document.getElementById("display").value = e
+    displayAngka = displayAngka + e
+}
+    document.getElementById("display").value = displayAngka
 }
