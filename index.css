@@ -1,0 +1,40 @@
+button {
+    width:100%;
+    background-color: black;
+    color: white;
+    border: none;    
+    border-radius: 5px;
+    padding-top: 5px;    
+    padding-bottom: 5px;    
+}
+
+div button {
+    padding: 10px 10px 10px 10px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.opr {
+    background-color: green;
+}
+
+.grid-konten{
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: 50px 50px 50px 50px;
+    border-radius: 5px; 
+}
+
+input {
+    grid-column: 1 / span 4;
+}
+
+.red {
+    grid-column: 1 / span 2;
+}
