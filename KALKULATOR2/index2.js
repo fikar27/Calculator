@@ -6,6 +6,7 @@ function kliktombol(e) {
     } else {
     console.log(e)
     displayAngka = displayAngka + e
-}
+    }
     document.getElementById("display").value = displayAngka
 }
+

@@ -1,3 +1,13 @@
+/* css tag */
+body {
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
 button {
     width:100%;
     background-color: black;
@@ -12,8 +22,14 @@ div button {
     padding: 10px 10px 10px 10px;
 }
 
+input {
+    grid-column: 1 / span 4;
+}
+
+/* css class */
 .red {
     background-color: red;
+    grid-column: 1 / span 2;
 }
 
 .blue {
@@ -26,16 +42,11 @@ div button {
 
 .grid-konten{
     display: grid;
+    justify-content: center;
     grid-gap: 4px;
     grid-template-columns: 50px 50px 50px 50px;
     border-radius: 5px; 
+    padding-top: 10px;
 }
 
-input {
-    grid-column: 1 / span 4;
-}
-
-.red {
-    grid-column: 1 / span 2;
-}
 
